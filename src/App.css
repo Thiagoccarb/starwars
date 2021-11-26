@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.name-filter {
+  display: flex;
+  align-items: center;
+  margin: 10px 15px;
+}
+
+.name-filter input, .main-filters input, .main-filters select, .sort-options select {
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 5px;
+  margin: 0 15px 5px 0;
+  width: 100px;
+}
+
+
+.name-filter input:focus {
+  outline: none;
+  border: 1px solid rgb(15, 161, 245);
+  border-radius: 5px;
+}
+
+.main-filters {
+  display: inline-block;
+  margin: 20px 15px;
+  width: 70vw;
+}
+
+.main-filters input:focus, .main-filters select:focus {
+  outline: none;
+  border: 1px solid rgb(15, 161, 245);
+  border-radius: 5px;
+}
+
+.sort-options {
+  display: inline-block;
+  margin: 20px 15px;
+  width: 70vw;
+}
+
+.sort-options label {
+  margin: 0 15px 5px 0;
+}
+
+.main-filters button, .sort-options button {
+  background-color: blue;
+  color: aliceblue;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.main-filters button:hover, .sort-options button:hover {
+  background-color: rgb(7, 7, 54);
+  color: aliceblue;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.main-filters button:disabled, .sort-options button:disabled {
+  background-color: rgb(138, 138, 139);
+  color: aliceblue;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter-history {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px;
+}
+
+.filter-history button{
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+table {
+  width: 1200px;
+}
+
+table thead th {
+  border: 1px solid black;
+  margin: 0;
+}
+
+table tbody td {
+  border: 1px solid black;
+  margin: 0;
+  text-align: center;
+}
