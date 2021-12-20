@@ -2,24 +2,65 @@
   box-sizing: border-box;
   margin: 0;
 }
+#root {
+  background-color: rgb(0, 0, 0);
+}
 
+label {
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .name-filter {
   display: flex;
   align-items: center;
   margin: 10px 15px;
+  justify-content: center;
 }
 
-.name-filter input, .main-filters input, .main-filters select, .sort-options select {
+.name-filter input {
+  background-color: aliceblue;
   border: 1px solid rgb(37, 37, 37);
   border-radius: 5px;
-  margin: 0 15px 5px 0;
-  width: 100px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  margin: 0 15px 5px 10px;
+  width: 150px;
 }
 
+.main-filters input {
+  background-color: aliceblue;
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  margin: 0 15px 5px 10px;
+  width: 50px;
+}
+.main-filters select {
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 5px;
+  font-weight: 700;
+  margin: 0 15px 5px 15px;
+}
+
+.sort-options select {
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 5px;
+  font-weight: 700;
+  margin: 0 15px 5px 15px;
+}
+
+.sort-options select:focus {
+  outline: none;
+  border: 2px solid #FD2155;
+  border-radius: 5px;
+  font-weight: 700;
+  margin: 0 15px 5px 15px;
+}
 
 .name-filter input:focus {
   outline: none;
-  border: 1px solid rgb(15, 161, 245);
+  border: 2px solid #FD2155;
   border-radius: 5px;
 }
 
@@ -31,7 +72,7 @@
 
 .main-filters input:focus, .main-filters select:focus {
   outline: none;
-  border: 1px solid rgb(15, 161, 245);
+  border: 2px solid #FD2155;
   border-radius: 5px;
 }
 
@@ -45,8 +86,36 @@
   margin: 0 15px 5px 0;
 }
 
+.sort-options input[type='radio']:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: aliceblue;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.sort-options input[type='radio']:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #FD2155;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
 .main-filters button, .sort-options button {
-  background-color: blue;
+  background-color: #FD2155;
   color: aliceblue;
   font-weight: 700;
   border: none;
@@ -73,6 +142,7 @@
 }
 
 h1 {
+  color: aliceblue;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
@@ -85,6 +155,10 @@ h1 {
   margin: 15px;
 }
 
+.filter-history li {
+  color: aliceblue;
+}
+
 .filter-history button{
   background-color: red;
   border: none;
@@ -95,16 +169,17 @@ h1 {
 }
 
 table {
-  width: 1200px;
+  width: auto;
 }
 
 table thead th {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
+  color: aliceblue;
   margin: 0;
 }
 
 table tbody td {
-  border: 1px solid black;
-  margin: 0;
+  border: 1px solid rgb(255, 255, 255);
+  color: aliceblue;  margin: 0;
   text-align: center;
 }
